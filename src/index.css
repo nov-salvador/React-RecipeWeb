@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=PT+Serif+Caption&family=Rubik+Bubbles&family=Sometype+Mono:wght@700&display=swap');
+@import "css folder/nav bar.scss";
+@import "css folder/keyframes.scss";
+@import "css folder/main.scss";
+@import "css folder/footer.scss";
+@import "css folder/recipes.scss";
+@import "css folder/recipeDetail.scss";
+@import "css folder/settings.scss";
+:root {
+ --background-color: white;
+ --background-light: white;
+ --shadow-color: rgba(0, 0, 0, 0.2);
+ --primary-color: rgb(46, 95, 160);
+ --primary-color-opacity: rgb(46, 95, 160, 0.7);
+ --text-color: black;
+ --text-light: rgb(114, 112, 112);
+ --font-size: 16px;
+}
+/* Font styles */
+.bubbles{
+  font-family: 'Rubik Bubbles', sans-serif;
+}
+.serif-caption{
+  font-family: 'PT Serif Caption', sans-serif;
+}
+.serif{
+  font-family: 'PT Serif', sans-serif;
+}
+.mono{
+  font-family: 'Sometype Mono', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  /* min-height: 100vh; */
+  background-color: var(--background-light);
+}
+a {
+  text-decoration: none;
+}
+.main{
+  margin-top: 70px;
+}
+.goback{
+  position: relative;
+  top: 0%;
+  left: 2%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+  
+
+@media screen and (max-width: 768px){
+  .sidebar-icon{
+    display: block;
+  }
+  .nav-link{
+    display: none;
+  }
+  .hero-description{
+    top: 18vw;
+    width: 63%;
+  }
+  .hero-description > h1{
+    font-size: 6vw;
+  }
+  .hero-description > h3{
+    font-size: 4vw;
+  }
+  .featured{
+    display: block;
+    position: relative;
+    margin-left: 0;
+  }
+  .featured-items-img{
+    width: 30%;
+  }
+  .about-list-container{
+    width: 60vw;
+  }
+  .contact-icon{
+    font-size: 1.5em;
+  }
+  .end{
+    font-size: .8em;
+  }
+  .button{
+    font-size: .8em;
+  }
+}
